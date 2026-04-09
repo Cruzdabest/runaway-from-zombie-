@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bg3t0tbncjb6v"]
+
+[node name="Node2D" type="Node2D" unique_id=1594044151]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1764540242]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect" unique_id=1609540512]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
