@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b3ivuqpo66mdy"]
+
+[ext_resource type="Texture2D" uid="uid://cfmbtkxc4ixm2" path="res://assets/Cruz/Space Ship Normal (1).png" id="1_4flbx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
+size = Vector2(97.9375, 108.9375)
+
+[node name="Player" type="CharacterBody2D" unique_id=1372614169]
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=713948381]
+
+[node name="SpaceShipNormal(1)" type="Sprite2D" parent="." unique_id=808003111]
+position = Vector2(508, 1545.9999)
+scale = Vector2(0.112012476, 0.12679833)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1365487027]
+position = Vector2(506, 1550)
+shape = SubResource("RectangleShape2D_4flbx")
