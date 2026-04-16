@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dyuja4b4w0gj0"]
+
+[node name="Laser" type="Area2D" unique_id=487704833]
