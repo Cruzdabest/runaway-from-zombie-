@@ -1,3 +1,17 @@
 [gd_scene format=3 uid="uid://dyuja4b4w0gj0"]
 
+[ext_resource type="Texture2D" uid="uid://hgqk8cvrgtji" path="res://assets/Hunter/blaster shots.png" id="1_08hiv"]
+[ext_resource type="PackedScene" uid="uid://b3ivuqpo66mdy" path="res://player.tscn" id="2_8x1rc"]
+
 [node name="Laser" type="Area2D" unique_id=487704833]
+position = Vector2(-19, -85)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=856591445]
+position = Vector2(18, 69)
+scale = Vector2(0.41015625, 0.2324219)
+texture = ExtResource("1_08hiv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=114230436]
+
+[node name="Player" parent="." unique_id=1372614169 instance=ExtResource("2_8x1rc")]
+position = Vector2(-233, -673)
