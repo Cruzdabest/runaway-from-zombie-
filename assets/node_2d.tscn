@@ -2,8 +2,92 @@
 
 [ext_resource type="Script" uid="uid://dcp26dsc587cp" path="res://assets/scripts/node_2d.gd" id="1_nyviw"]
 [ext_resource type="PackedScene" uid="uid://b3ivuqpo66mdy" path="res://player.tscn" id="2_2n18y"]
+[ext_resource type="Texture2D" uid="uid://en23mktxf6x6" path="res://assets/Tatsuya/background/l0_sprite_01.png" id="2_pt6oa"]
+[ext_resource type="Texture2D" uid="uid://bcagejjql6f1y" path="res://assets/Tatsuya/background/l0_sprite_02.png" id="3_hd6xl"]
+[ext_resource type="Texture2D" uid="uid://s3s70jvryebg" path="res://assets/Tatsuya/background/l0_sprite_03.png" id="4_gil1v"]
+[ext_resource type="Texture2D" uid="uid://ceyatthoye6q2" path="res://assets/Tatsuya/background/l0_sprite_04.png" id="5_020w5"]
+[ext_resource type="Texture2D" uid="uid://bdcm0pds205bu" path="res://assets/Tatsuya/background/l0_sprite_05.png" id="6_ub0lc"]
+[ext_resource type="Texture2D" uid="uid://crmr6mvbwlwh0" path="res://assets/Tatsuya/background/l0_sprite_06.png" id="7_1lrfo"]
+[ext_resource type="Texture2D" uid="uid://2sarpg35bc3d" path="res://assets/Tatsuya/background/l0_sprite_07.png" id="8_00egk"]
+[ext_resource type="Texture2D" uid="uid://bs0ee7juaageh" path="res://assets/Tatsuya/background/l0_sprite_08.png" id="9_y3vas"]
+[ext_resource type="Texture2D" uid="uid://cu5d3lu6ubqrv" path="res://assets/Tatsuya/background/l0_sprite_09.png" id="10_7i2ea"]
+[ext_resource type="Texture2D" uid="uid://kbqjbhum1rlj" path="res://assets/Tatsuya/background/l0_sprite_10.png" id="11_8p316"]
+[ext_resource type="Texture2D" uid="uid://bwb7p47a4i48f" path="res://assets/Tatsuya/background/l0_sprite_11.png" id="12_eussk"]
+[ext_resource type="Texture2D" uid="uid://dag7sgbe30d3h" path="res://assets/Tatsuya/background/l0_sprite_12.png" id="13_o8mcx"]
+[ext_resource type="Texture2D" uid="uid://bksg4f2pcdtqt" path="res://assets/Tatsuya/background/l0_sprite_13.png" id="14_0exar"]
+[ext_resource type="Texture2D" uid="uid://bd0k0nj2kwxu" path="res://assets/Tatsuya/background/l0_sprite_14.png" id="15_uq83i"]
+[ext_resource type="Texture2D" uid="uid://b2w526al5l1ij" path="res://assets/Tatsuya/background/l0_sprite_15.png" id="16_jfhrq"]
+[ext_resource type="Texture2D" uid="uid://b2isq8tpfp14h" path="res://assets/Tatsuya/background/l0_sprite_16.png" id="17_0dj70"]
+[ext_resource type="Texture2D" uid="uid://o7s1y2qnpt1" path="res://assets/Tatsuya/background/l0_sprite_17.png" id="18_hqdae"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_noj0c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pt6oa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hd6xl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gil1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_020w5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ub0lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1lrfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_00egk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_y3vas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7i2ea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8p316")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_eussk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_o8mcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0exar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_uq83i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jfhrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_0dj70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_hqdae")
+}],
+"loop": true,
+"name": &"default",
+"speed": 18.0
+}]
 
 [node name="Game" type="Node2D" unique_id=1594044151]
 script = ExtResource("1_nyviw")
+
+[node name="BackGround" type="Node2D" parent="." unique_id=1897960529]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BackGround" unique_id=1007622908]
+position = Vector2(272, 483.5001)
+scale = Vector2(0.4, 0.39875013)
+sprite_frames = SubResource("SpriteFrames_noj0c")
+frame_progress = 0.6978877
 
 [node name="Player" parent="." unique_id=1372614169 instance=ExtResource("2_2n18y")]
